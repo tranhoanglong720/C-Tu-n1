@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#noidung .col-6-sp-sp{
+    margin-top: 20%;
+}
+#noidung p{
+ font-size: 30px;
+ color: red;
+}
+#noidung .col-6-sp-sp a{
+    font-size: 20px;
+    border :solid 1px;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+}

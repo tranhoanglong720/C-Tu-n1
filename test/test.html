@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/test.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/test.js"></script>
+    
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <div id="logo"> 
+                            <img src="/img/logo.jpg" alt="logo" width="250" height="100">
+                            <span>GroumentDinerSever</span>
+                        </div>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div id="main-nav">                     
+                            <ul class="nav">
+                                <li class="nav-item">
+                                   <a href="#" class="nav-link text-black"> OurMenu</a>
+                                </li>
+                                <li class="nav-item"> <a href="#" class="nav-link  text-black">Ideas</a></li>                              
+                                    <li class="nav-item"><a href="#" class="nav-link text-black">About</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link text-black">Program</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" id="navbarDropdown">Dropdown</a>
+                                        <div class="dropdown-content">
+                                        <a class="dropdown-item" href="#"data-toggle="modal" data-target="#modalDangnhap">Action</a>                                       
+                                       <a class="dropdown-item" href="#">Another action</a>                                                                           
+                                        </div>
+                                     </li>
+                            </ul>                                                   
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  
+                    <img src="/img/giay.jpg" alt="anh" width="100%" height="100">
+                </div>
+                <div id="noidung">
+                    <div class="row">
+                    
+                    <div class="col-4">
+                        <img src="/img/giay.jpg" width="80%" height="100">
+                        <p>$147.00</p>
+                        <p>*Exasdasd</p>
+                    </div>
+                    <div class="col-4-body">
+                        <p>
+                            5 asda awh4as a asgafasdf
+                        </p>
+                        <a href="#">Meat</a>
+                        <p>asdabriagigaiugfndfgoiah
+                             safgbairgbaoihoi
+                             adfgabghaoisdfh
+                        </p>
+                    </div>
+                         <div class="col-4-menu text-center">
+                                <h1>Shop</h1>
+                                <ul class="nav nav-tabs">
+                                <div class="list-gruop-item">
+                                <li class="nav-item"><a href="#" class="nav-link text-black">Program1</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-black">Program2</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-black">Program3</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-black">Program4</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-black">Program5</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-black">Program6</a></li>
+                                </div>
+                                </ul>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modalDangnhap">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Singin To Yout Accout</h5>
+                        <span id="tb"></span>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="form-input">   
+                        <label for="email" class="col-xs-3">Email</label>       
+                        <div class="col-xs-9">                   
+                        <input type="email" class="form-control  " placeholder="Nhập email" id="email" onblur="ktemail();"> <span id="Mail">*</span>  
+                    </div> 
+                    <label for="password" class="col-xs-3">password</label>
+                    <div class="col-xs-9">                                    
+                        <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="password" onblur="ktmk();"><span id="Pass">*</span>
+                    </div>
+                        </div>
+                        <div class="btndangnhap text-center">
+                            <input id="dangnhap" type="submit" class="btn btn-dark mt-5 mb-5" value="Đăng nhập" onclick="ktmang();">
+                            <input type="button" class="btn btn-dark ml-3" value="Huỷ" data-dismiss="modal" &times;>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
